@@ -1,15 +1,15 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Kf5HLjuv)
 
-# Ping-Pong Game Tool Comparison Lab
+# Ping-Pong Game Tool Comparison 
 
-This repository contains two implementations of a Python Ping-Pong game created using two different coding tools. The objective of the lab is to compare the tools based on code quality, speed of generation, ease of use, debugging experience, and flexibility.
+This repository contains two implementations of a Python Ping-Pong game created using Cursor and GeminiCLI. The objective of the lab is to compare the tools based on code quality, speed of generation, ease of use, debugging experience, and flexibility.
 
 ## Repository Structure
 
 ```
-cursor_pingpong.py               # Cursor version
-gemini_pingpong_basic.py         # Gemini basic version
-gemini_pingpong_enhanced.py      # Gemini enhanced version
+ping_pong_cursor.py               # Cursor version
+ping_pong_gemini.py         # Gemini basic version
+ppg.py      # Gemini enhanced version
 README.md
 ```
 
@@ -82,15 +82,14 @@ Two versions were generated: a basic version and an enhanced version.
 
 ## Speed of Generation
 - Generated full files quickly once WriteTodos was disabled.
-- Both versions were produced in a single pass.
+- First version were produced in a single pass.Second has some problem like Cursor did,still haven't figure it out.
 
 ## Ease of Use
 - Initially confusing due to Todo Mode.
-- After disabling WriteTodos, the workflow became direct and easy to use.
+- After disabling WriteTodos, the workflow became direct and easy to use. 
 
 ## Debugging and Error Handling
 - Both versions ran without syntax errors.
-- No repeated logic issues.
 - Debugging mainly involved tuning parameters (speed, paddle size).
 - Much easier to stabilize compared to Cursor.
 
@@ -105,7 +104,7 @@ Two versions were generated: a basic version and an enhanced version.
 
 ## Code Quality
 - Cursor: readable but logically unstable; repeated bugs.
-- Gemini: stable baseline and better structure, especially in enhanced version.
+- Gemini: stable baseline and better structure.The enhanced version repeated the same problem as Cursor done, the paddle stucked after the first serve .
 
 ## Speed of Generation
 - Cursor: fast per iteration, but overall slowed by repeated bug fixes.
@@ -113,15 +112,15 @@ Two versions were generated: a basic version and an enhanced version.
 
 ## Ease of Use
 - Cursor: very easy to use, strong UI/UX, helpful previews.
-- Gemini: easy after disabling Todo Mode; otherwise slowed by unnecessary interaction.
+- Gemini: easy after disabling Todo Mode; otherwise slowed by unnecessary interaction.Also I think is very humor when you waiting for the output, there are many humor phrases make you laugh.
 
 ## Debugging Experience
-- Cursor: difficult because the same problems reappeared many times.
-- Gemini: fewer issues, easier to diagnose and tune.
+- Cursor: Medium, because the same problems reappeared many times.
+- Gemini: Medium, for the easier task with no issue, but with a more advanced version, these ai assistant seems like cannot solve the real problem.
 
 ## Flexibility and Customization
-- Cursor: flexible but fragile; changes often caused regressions.
-- Gemini: flexible with strong internal structure; easier to extend.
+- Cursor: flexible, changes often caused regressions.
+- Gemini: flexible ,and with no sandbox, morelike openclaw, can direclty change and fix the file on my computer, with strong internal structure; easier to extend.
 
 ---
 
